@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+
+  <th:block th:replace="fragments/meta"></th:block>
+  <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">NewPage</title>
+
+  <th:block th:replace="fragments/style"></th:block>
+
+</head>
+<body>
+<!--Nav-->
+<div th:replace="~{fragments/navbar}"> </div>
+
+
+<!--main-->
+<main layout:fragment="main-content">
+<!-- Base on Webpage are changing -->
+</main>
+
+<!--footer-->
+<div th:replace="fragments/footer"></div>
+
+
+<!--js-Script-->
+<th:block th:replace="fragments/script"></th:block>
+
+</body>
+</html>
